@@ -24,6 +24,10 @@ input, select, th, td {font-size:1rem}
  	background-color: black;
  }
 
+h1 {
+   font-family: regular;
+}
+
  .main {
  	background-color: white;
  	margin-top: 10.1rem;
@@ -34,14 +38,18 @@ input, select, th, td {font-size:1rem}
  	z-index: 1;
  }
 
+
+/*************************************************************
+ ******************** ryu section ****************************
+ *************************************************************/
  .ryu {
  	float: left;
- 	width: 65.9rem;
+ 	width: 55.9rem;
  	height: 49.4rem;
  }
 
  .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
- 	width: 65.9rem;
+ 	width: 55.9rem;
  	height: 49.4rem;
  }
 
@@ -79,3 +87,57 @@ input, select, th, td {font-size:1rem}
    top: 14rem;
    left: 50.2rem;
  }
+
+ /************************************************************
+  ****************** Hulk ryu section ************************
+  ************************************************************/
+
+.hulk-ryu {
+   float: right;
+   width: 55.9rem;
+   height: 49.4rem;
+   -webkit-transform: scaleX(-1);
+}
+
+.hulk-ryu-ready, .hulk-ryu-throwing, .hulk-ryu-cool, .hulk-ryu-still {
+   width: 55.9rem;
+   height: 49.4rem;
+}
+
+.hulk-ryu-ready, .hulk-ryu-throwing, .hulk-ryu-cool, .hulk-hadouken {
+   display: none;
+}
+
+.hulk-ryu-ready {
+   background-image: url('../images/ryu-ready-position.gif');
+}
+
+.hulk-ryu-still {
+   background-image: url('../images/ryu-standing-still.png');
+}
+
+.hulk-ryu-throwing {
+   background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.hulk-ryu-cool {
+   background-image: url('../images/ryu-cool.gif');
+}
+
+.hulk-hadouken {
+   background-image: url('../images/hadouken.gif');
+   width:15.6rem;
+   height: 9rem;
+   float: right;
+   position: absolute;
+   z-index: 10;
+   top: 17rem;
+   right: 40rem;
+   -webkit-transform: scaleX(-1);
+ }
+
+.hulk-hadouken, .hulk-ryu-cool, .hulk-ryu-throwing, .hulk-ryu-ready, .hulk-ryu-still {
+   background-repeat: no-repeat;
+   -webkit-filter: hue-rotate(90deg);
+   filter: hue-rotate(90deg);
+}
