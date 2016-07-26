@@ -1,0 +1,78 @@
+/**
+ * Font Sizing Emmet 1rem = 10px
+ */
+html {font-size: 62.5%;} / sets global font size to 10px on desktop browsers /
+h1 {font-size:3.2rem}
+h2 {font-size:2.4rem}
+h3 {font-size:1.87167rem}
+h4 {font-size:1.6rem}
+h5 {font-size:1.32833rem}
+h6 {font-size:1.07167rem}
+input, select, th, td {font-size:1rem}
+
+/**
+ * Start of Custom Styles
+ */
+
+/* 
+* {
+	outline: red 1px solid;
+} 
+*/
+
+ body {
+ 	background-color: black;
+ }
+
+ .main {
+ 	background-color: white;
+ 	margin-top: 10.1rem;
+ 	padding-left: 10rem;
+ 	min-width: 120rem;
+ 	height: 50rem;
+ 	position: relative;
+ 	z-index: 1;
+ }
+
+ .ryu {
+ 	float: left;
+ 	width: 65.9rem;
+ 	height: 49.4rem;
+ }
+
+ .ryu-ready, .ryu-still, .ryu-throwing {
+ 	width: 65.9rem;
+ 	height: 49.4rem;
+ }
+
+ .ryu-ready, .ryu-throwing {
+ 	display: none;
+ }
+
+ .ryu-ready {
+ 	background-image: url('../images/ryu-ready-position.gif');
+ }
+
+ .ryu-still {
+ 	background-image: url('../images/ryu-standing-still.png');
+ }
+
+ .ryu-throwing {
+ 	background-image: url('../images/ryu-throwing-hadouken.png');
+ }
+
+ .hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+ 	background-repeat: no-repeat;
+ }
+
+ .hadouken {
+   background-image: url('../images/hadouken.gif');
+   width:15.6rem;
+   height: 9rem;
+   display: none;
+   float: left;
+   position: absolute;
+   z-index: 10;
+   top: 14rem;
+   left: 50rem;
+ }
