@@ -36,7 +36,7 @@ $(document).ready(function(){
 	}) .keyup(function(event) {
 		if (event.keyCode=88) {
 			$('.ryu-cool').hide();
-			$('ryu-still, .ryu-ready').show();
+			$('.ryu-ready').show();
 		}
 	});
 //hulk ryu animations
