@@ -20,15 +20,24 @@ $(document).ready(function(){
 			function() {
 				$(this).hide();
 				$(this).css('left', '52rem');
-			}
-		);
-		//nimate it to the right of screen
+			});
 	})
 
 	.mouseup(function() {
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
-		//ryu goes back to his ready position
+	});
+
+	$(document).keydown(function(event) {
+		if (event.keyCode=88) {
+			$('.ryu-still, .ryu-ready').hide();
+			$('.ryu-cool').show();
+		}
+	}) .keyup(function(event) {
+		if (event.keyCode=88) {
+			$('.ryu-cool').hide();
+			$('ryu-still, .ryu-ready').show();
+		}
 	});
 });
 
