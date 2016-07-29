@@ -29,12 +29,12 @@ $(document).ready(function(){
 	});
 
 	$(document).keydown(function(event) {
-		if (event.keyCode=88) {
+		if (event.keyCode === 88) {
 			$('.ryu-still, .ryu-ready').hide();
 			$('.ryu-cool').show();
 		}
 	}) .keyup(function(event) {
-		if (event.keyCode=88) {
+		if (event.keyCode === 88) {
 			$('.ryu-cool').hide();
 			$('.ryu-ready').show();
 		}
@@ -69,12 +69,12 @@ $(document).ready(function(){
 	});
 
 	$(document).keydown(function(event) {
-		if (event.keyCode=86) {
+		if (event.keyCode === 86) {
 			$('.hulk-ryu-still, .hulk-ryu-ready').hide();
 			$('.hulk-ryu-cool').show();
 		}
 	}) .keyup(function(event) {
-		if (event.keyCode=88) {
+		if (event.keyCode === 86) {
 			$('.hulk-ryu-cool').hide();
 			$('.hulk-ryu-ready').show();
 		}
